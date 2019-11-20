@@ -1,4 +1,4 @@
-var cacheName = 'Scanette PWA';
+var cacheName = 'Scanette_PWA';
 var appShellFiles = [
   '/icons/icon-32.png/',
   '/icons/icon-512.png'
@@ -40,6 +40,18 @@ self.addEventListener('fetch', (e) => {
           return response;
         });
       });
+    })
+  );
+});
+
+self.addEventListener('activate', (e) => {
+  e.waitUntil(
+    caches.keys().then((keyList) => {
+          return Promise.all(keyList.map((key) => {
+        if(cacheName.indexOf(key) === -1) {
+          return caches.delete(key);
+        }
+      }));
     })
   );
 });
