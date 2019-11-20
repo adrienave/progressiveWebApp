@@ -1,4 +1,4 @@
-var cacheName = 'Scanette_PWA-v1';
+var cacheName = 'Scanette_PWA-v2';
 var appShellFiles = [
   '../icons/icon-32.png',
   '../icons/icon-512.png',
