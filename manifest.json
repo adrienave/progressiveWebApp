@@ -1,6 +1,6 @@
 {
     "name": "Scanette PWA",
-    "short_name": "js13kPWA",
+    "short_name": "Scanette PWA",
     "description": "Progressive Web App used to scan articles",
     "icons": [
         {
