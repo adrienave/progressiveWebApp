@@ -1,7 +1,7 @@
-var cacheName = 'Scanette_PWA';
+var cacheName = 'Scanette_PWA-v1';
 var appShellFiles = [
-  '/icons/icon-32.png/',
-  '/icons/icon-512.png'
+  '../icons/icon-32.png/',
+  '../icons/icon-512.png'
 ];
 var games = [
   'barcode-scanner',
@@ -14,7 +14,7 @@ var games = [
 
 var gamesImages = [];
 for(var i=0; i<games.length; i++) {
-  gamesImages.push('/images/'+games[i]+'.png');
+  gamesImages.push('../images/'+games[i]+'.png');
 }
 
 var contentToCache = appShellFiles;
