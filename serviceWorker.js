@@ -1,5 +1,5 @@
 var cacheName = 'Scanette_PWA-v2';
-var appShellFiles = [
+var contentToCache = [
   './icons/icon-32.png',
   './icons/icon-512.png',
   './index.html',
@@ -8,23 +8,13 @@ var appShellFiles = [
   './js/app.js',
   './js/job.js',
   './js/exif.js',
-  './js/DecoderWorker.js'
+  './js/DecoderWorker.js',
+  './images/barcode-scanner.png',
+  './images/icon-cart.png',
+  './images/icon-setup.png',
+  './images/icon-transmit.png',
+  './images/logo.png'
 ];
-var games = [
-  'barcode-scanner',
-  'icon-cart',
-  'icon-setup',
-  'icon-transmit',
-  'logo'
-];
-
-
-var gamesImages = [];
-for(var i=0; i<games.length; i++) {
-  gamesImages.push('./images/'+games[i]+'.png');
-}
-
-var contentToCache = appShellFiles.concat(gamesImages);
 
 self.addEventListener('install', (e) => {
     console.log('[Service Worker] Install');
