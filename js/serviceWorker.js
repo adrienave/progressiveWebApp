@@ -1,6 +1,6 @@
 var cacheName = 'Scanette_PWA-v1';
 var appShellFiles = [
-  '../icons/icon-32.png/',
+  '../icons/icon-32.png',
   '../icons/icon-512.png'
 ];
 var games = [
