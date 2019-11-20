@@ -1,15 +1,15 @@
 var cacheName = 'Scanette_PWA-v2';
 var appShellFiles = [
-  '../icons/icon-32.png',
-  '../icons/icon-512.png',
-  '../index.html',
-  '../style.css',
-  '../produits.csv',
-  '../js/app.js',
-  '../js/serviceWorker.js',
-  '../js/job.js',
-  '../js/exif.js',
-  '../js/DecoderWorker.js'
+  '/icons/icon-32.png',
+  '/icons/icon-512.png',
+  '/index.html',
+  '/style.css',
+  '/produits.csv',
+  '/js/app.js',
+  '/serviceWorker.js',
+  '/js/job.js',
+  '/js/exif.js',
+  '/js/DecoderWorker.js'
 ];
 var games = [
   'barcode-scanner',
@@ -22,7 +22,7 @@ var games = [
 
 var gamesImages = [];
 for(var i=0; i<games.length; i++) {
-  gamesImages.push('../images/'+games[i]+'.png');
+  gamesImages.push('/images/'+games[i]+'.png');
 }
 
 var contentToCache = appShellFiles;

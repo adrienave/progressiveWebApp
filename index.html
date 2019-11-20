@@ -93,6 +93,15 @@
             </p>
         </div>
     </div>
+	
+	<script>
+	    window.addEventListener("load", function(e) { 
+			if('serviceWorker' in navigator) {
+				console.log("Test!");
+				navigator.serviceWorker.register('./serviceWorker.js');
+			};
+		});
+	</script>
         
 </body>
 

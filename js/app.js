@@ -325,11 +325,6 @@ document.addEventListener("DOMContentLoaded", function(_e) {
         document.body.height = window.innerHeight;
     }
     window.onresize(); // called to initially set the height.
-    
-    if('serviceWorker' in navigator) {
-		console.log("Test!");
-		navigator.serviceWorker.register('./js/serviceWorker.js');
-	};
 
     
 });     
